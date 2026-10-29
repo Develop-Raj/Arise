@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="ARISE — a real-life RPG progression system.">
+  <title>ARISE — The System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-nav="dashboard" aria-label="ARISE dashboard">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 36 32H4L20 3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 13 27 28H13L20 13Z" fill="currentColor"/></svg></span>
+        <span><strong>ARISE</strong><small>REAL LIFE SYSTEM</small></span>
+      </a>
+      <div class="side-player" id="side-player"></div>
+      <div class="nav-label">SYSTEM MENU</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-nav="dashboard"><span class="icon" data-icon="grid"></span><span>Dashboard</span><kbd>01</kbd></button>
+        <button class="nav-item" data-nav="quests"><span class="icon" data-icon="swords"></span><span>Quests</span><kbd>02</kbd></button>
+        <button class="nav-item" data-nav="character"><span class="icon" data-icon="user"></span><span>Character</span><kbd>03</kbd></button>
+        <button class="nav-item" data-nav="stats"><span class="icon" data-icon="chart"></span><span>Skills &amp; Stats</span><kbd>04</kbd></button>
+        <button class="nav-item" data-nav="goals"><span class="icon" data-icon="target"></span><span>Main Quests</span><kbd>05</kbd></button>
+        <button class="nav-item" data-nav="achievements"><span class="icon" data-icon="trophy"></span><span>Achievements</span><kbd>06</kbd></button>
+        <button class="nav-item" data-nav="analytics"><span class="icon" data-icon="activity"></span><span>History &amp; Analytics</span><kbd>07</kbd></button>
+        <button class="nav-item" data-nav="focus"><span class="icon" data-icon="timer"></span><span>Focus Mode</span><kbd>08</kbd></button>
+        <button class="nav-item" data-nav="settings"><span class="icon" data-icon="settings"></span><span>Settings</span><kbd>09</kbd></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="system-status"><span class="status-dot"></span><span>SYSTEM ONLINE</span><span class="status-version">v1.0</span></div>
+        <p>Progress is earned.<br><b>Every day is a new quest.</b></p>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open navigation"><span data-icon="menu"></span></button>
+        <div class="breadcrumb"><span>ARISE</span><span class="slash">/</span><strong id="page-title">DASHBOARD</strong></div>
+        <div class="top-actions"><span class="live-indicator"><i></i> SYSTEM ACTIVE</span><button class="icon-button" id="quick-add" title="Create quest" aria-label="Create quest"><span data-icon="plus"></span></button><button class="avatar-mini" id="avatar-mini" title="Character profile">?</button></div>
+      </header>
+      <section id="view" class="view" tabindex="-1"></section>
+      <footer class="footer"><span>ARISE <span class="footer-muted">/ PERSONAL PROGRESSION SYSTEM</span></span><span id="footer-date"></span></footer>
+    </main>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-root"></div>
+  <script src="script.js"></script>
+</body>
+</html>
