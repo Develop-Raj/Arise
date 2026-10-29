@@ -42,6 +42,12 @@ No framework, package manager, or build step is required.
 ![Arise](screenshots/preview2.png)
 ![Arise](screenshots/preview3.png)
 ![Arise](screenshots/preview4.png)
+![Arise](screenshots/preview5.png)
+![Arise](screenshots/preview6.png)
+![Arise](screenshots/preview7.png)
+![Arise](screenshots/preview8.png)
+![Arise](screenshots/preview9.png)
+![Arise](screenshots/preview10.png)
 
 ---
 
